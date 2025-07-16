@@ -133,4 +133,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Built with ❤️ using Next.js, TypeScript, and Framer Motion 
+Built with ❤️ using Next.js, TypeScript, and Framer Motion
+
+<!-- Updated for custom domain deployment --> 
