@@ -1,0 +1,215 @@
+#skills{
+    /* Use global class: .section */
+    overflow: hidden;
+    width: 100vw;
+    max-width: var(--max-width-content);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: var(--spacing-lg) 0;
+}
+
+.skillTitle{
+    /* Use global class: .title .title--with-padding */
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    padding-top: var(--spacing-2xl);
+    margin-bottom: var(--spacing-lg);
+}
+
+.skillDesc {
+    /* Use global class: .description */
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-md);
+    max-width: 50rem;
+    padding: 0 var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+.skillBars {
+    margin: var(--spacing-lg) 0;
+    width: 100%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.skillBar{
+    /* Use global class: .card */
+    display: flex;
+    padding: var(--spacing-lg) var(--spacing-lg);
+    border-radius: var(--radius-md);
+    background: var(--secondary-bg);
+    align-items: center;
+    gap: var(--spacing-lg);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.skillBarImg{
+    /* Use global class: .card__image */
+    object-fit: cover;
+    height: 4rem;
+    width: 6rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.skillBarText{
+    /* Use global class: .card__text */
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-light);
+    flex: 1;
+    min-width: 0; /* Prevents text overflow */
+    text-align: center;
+}
+
+.skillBarText h2 {
+    margin-bottom: var(--spacing-sm);
+    font-weight: var(--font-weight-semibold);
+    text-align: center;
+}
+
+.skillBarText p {
+    line-height: 1.5;
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+/* Tablet styles */
+@media screen and (max-width: 768px) {
+    .skillBars {
+        max-width: 90%;
+        gap: var(--spacing-md);
+    }
+    
+    .skillBar {
+        padding: var(--spacing-md) var(--spacing-md);
+        gap: var(--spacing-md);
+    }
+    
+    .skillBarImg {
+        height: 3.5rem;
+        width: 6rem;
+    }
+    
+    .skillBarText h2 {
+        font-size: var(--font-size-lg);
+        text-align: center;
+    }
+    
+    .skillBarText p {
+        font-size: var(--font-size-sm);
+        text-align: center;
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 720px) {
+    .skillBars {
+        text-align: center;
+        max-width: 95%;
+        margin: var(--spacing-md) 0;
+        gap: var(--spacing-md);
+    }
+    
+    .skillBar {
+        flex-direction: column;
+        text-align: center;
+        padding: var(--spacing-lg);
+        gap: var(--spacing-md);
+    }
+    
+    .skillBarImg {
+        height: 3rem;
+        width: 3rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .skillBarText h2 {
+        font-size: var(--font-size-md);
+        margin-bottom: var(--spacing-xs);
+        text-align: center;
+    }
+    
+    .skillBarText p {
+        font-size: var(--font-size-sm);
+        line-height: 1.4;
+        text-align: center;
+    }
+}
+
+/* Small mobile styles */
+@media screen and (max-width: 480px) {
+    .skillBars {
+        max-width: 98%;
+        margin: var(--spacing-sm) 0;
+        gap: var(--spacing-sm);
+    }
+    
+    .skillBar {
+        padding: var(--spacing-md);
+        gap: var(--spacing-sm);
+    }
+    
+    .skillBarImg {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    
+    .skillBarText h2 {
+        font-size: var(--font-size-sm);
+        margin-bottom: var(--spacing-xs);
+        text-align: center;
+    }
+    
+    .skillBarText p {
+        font-size: 2.5vw;
+        line-height: 1.3;
+        text-align: center;
+    }
+    
+    .skillTitle {
+        font-size: var(--font-size-lg);
+        padding-top: var(--spacing-xl);
+    }
+    
+    .skillDesc {
+        font-size: var(--font-size-sm);
+        padding: 0 var(--spacing-md);
+    }
+}
+
+/* Extra small mobile styles */
+@media screen and (max-width: 360px) {
+    .skillBarText h2 {
+        font-size: var(--font-size-sm);
+        text-align: center;
+    }
+    
+    .skillBarText p {
+        font-size: 3vw;
+        text-align: center;
+    }
+    
+    .skillBarImg {
+        height: 2rem;
+        width: 2rem;
+    }
+    
+    .skillBar {
+        padding: var(--spacing-sm);
+    }
+    
+    .skillBars {
+        gap: var(--spacing-xs);
+    }
+}

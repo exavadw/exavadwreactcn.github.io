@@ -1,0 +1,91 @@
+#intro {
+    height: var(--section-height);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.bg{
+    /* Use global class: .intro-bg */
+    position: absolute;
+    top: 10rem;
+    right: 10rem;
+    z-index: -1;
+    object-fit: cover;
+    height: 75vh;
+}
+
+.introContent{
+    /* Use global class: .intro-content */
+    height: 100vh;
+    width: 100vw;
+    padding: var(--spacing-xl);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello{
+    /* Use global class: .subtitle */
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-thin);
+}
+
+.introName{
+    /* Use global class: .text-accent */
+    color: var(--accent-color);
+}
+
+.introParaContainer{
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-normal);
+}
+
+.btn{
+    /* Use global class: .btn */
+    background: var(--button-bg);
+    margin: var(--spacing-md) 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--radius-xl);
+}
+
+.btn:hover{
+    cursor: pointer; 
+    background: var(--accent-color);
+}
+
+/* Intro-specific styles */
+.typing-text {
+    /* Already defined in global styles */
+    display: inline-block;
+    min-height: 1em;
+    position: relative;
+}
+  
+.cursor {
+    /* Already defined in global styles */
+    display: inline-block;
+    width: 2px; 
+    background-color: currentColor;
+    margin-left: 2px;
+    height: 1em;
+    vertical-align: middle;
+}
+
+/* Responsive styles */
+@media screen and (max-width:840px){
+    .bg {
+        height: 40vh;
+        right: 20vw;
+    }
+    .introContent{
+        font-size: 10vw;
+    }
+    .hello {
+        font-size: 4.5vw;
+    }
+}

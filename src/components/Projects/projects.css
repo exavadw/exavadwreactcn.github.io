@@ -1,0 +1,78 @@
+#projects {
+    /* Use global class: .section .section--full-height .section--narrow */
+    margin: 0 auto;
+    min-height: var(--section-height);
+    width: 100vw;
+    max-width: var(--max-width-narrow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 var(--spacing-md);
+}
+
+.projectsTitle {
+    /* Use global class: .title */
+    margin: var(--spacing-md) 0;
+    font-size: var(--font-size-xl);
+}
+
+.projectsDesc {
+    /* Use global class: .description */
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-md);
+    max-width: 45rem;
+}
+
+.projectsImgs {
+    /* Use global class: .grid */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: var(--max-width-content);
+    gap: var(--spacing-2xl);
+    padding: var(--spacing-md);
+}
+
+.projectsImg {
+    /* Use global class: .project-image */
+    object-fit: cover;
+    height: 20rem;
+    width: auto;
+    border-radius: var(--radius-xl);
+    margin: 0;
+}
+
+.text {
+    padding: var(--spacing-md);
+    font-weight: var(--font-weight-light);
+}
+
+.projectsImg:hover{
+    cursor: pointer;
+}
+
+/* Links already covered by global styles */
+a {
+    color: var(--text-primary);
+    text-decoration: none;
+  }
+  
+a:hover {
+    color: var(--accent-color);
+  }
+
+/* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .projectsImgs {
+        gap: var(--spacing-md);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projectsImgs {
+        gap: 0.75rem;
+    }
+}

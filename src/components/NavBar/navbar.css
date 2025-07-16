@@ -1,0 +1,110 @@
+.navbar{
+    /* Use global class: .navbar */
+    height: var(--navbar-height);
+    width: 100vw;
+    margin: 0 auto;
+    padding: var(--spacing-md) var(--spacing-xl);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    z-index: 3;
+    position: sticky;
+    background-color: var(--primary-bg);
+}
+
+.logo{
+    /* Use global class: .logo */
+    object-fit: contain;
+    height: 3rem;
+    width: auto;
+    max-width: 12rem;
+}
+
+.desktopMenuListItem {
+    /* Use global class: .menu-item */
+    margin: var(--spacing-md);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.desktopMenuListItem:hover {
+    color: var(--accent-color);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.desktopMenuBtn {
+    /* Use global class: .btn .btn--menu */
+    object-fit: cover;
+    height: 3rem;
+    width: 8rem;
+    margin: var(--spacing-md);
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 var(--spacing-md);
+    border-radius: var(--radius-xl);
+}
+
+.desktopMenuBtn:hover {
+    cursor: pointer;
+    background-color: var(--accent-color);
+}
+
+.active {
+    color: var(--accent-color);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.mobMenu {
+    /* Use global class: .mobile-menu-icon */
+    display: none;
+    object-fit: cover;
+    height: 3rem;
+}
+
+.navMenu {
+    /* Use global class: .mobile-menu */
+    position: absolute;
+    top: var(--navbar-mobile-height);
+    right: var(--spacing-xl);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-sm);
+    height: fit-content;
+    min-width: 15rem;
+    background-color: var(--secondary-bg);
+    border-radius: var(--radius-lg);
+}
+
+.listItem {
+    /* Use global class: .mobile-menu__item */
+    color: var(--text-primary);
+    padding: var(--spacing-sm) var(--spacing-2xl);
+    margin: var(--spacing-xs);
+    border-radius: var(--radius-sm);
+    background: var(--primary-bg);
+}
+
+/* Responsive styles */
+@media screen and (max-width:720px) {
+    .mobMenu {
+        display: flex;
+    }
+    .desktopMenu {
+        display: none;
+    }
+    .desktopMenuBtn {
+        display: none;
+    }
+    .logo {
+        height: 2.5rem;
+        max-width: 10rem;
+    }
+}

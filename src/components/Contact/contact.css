@@ -1,0 +1,76 @@
+#contactPage {
+    /* Using global classes: .section .section--full-height .section--narrow */
+    min-height: var(--section-height);
+    width: 100vw;
+    max-width: var(--max-width-narrow);
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactPageTitle {
+    /* Use global class: .title */
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.contactDesc {
+    /* Use global class: .description */
+    padding: var(--spacing-md);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-normal);
+}
+
+.contactForm {
+    /* Use global class: .form */
+    margin: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: var(--max-width-narrow);
+}
+
+.name, .email, .msg {
+    /* Use global class: .form__input */
+    font-size: var(--font-size-sm);
+    color: var(--text-primary);
+    width: 100%;
+    max-width: var(--max-width-form);
+    margin: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    border-radius: var(--radius-md);
+    background: var(--secondary-bg);
+}
+
+.submitBtn {
+    /* Use global class: .btn .btn--large */
+    background: var(--button-bg);
+    border: none;
+    padding: 0.75rem 3.5rem;
+    border-radius: var(--radius-md);
+    margin: var(--spacing-xl);
+}
+
+.submitBtn:hover {
+    cursor: pointer;
+    background: var(--accent-color);
+}
+
+.links {
+    /* Use global class: .social-links */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link {
+    /* Use global class: .social-link */
+    object-fit: cover;
+    height: 3rem;
+    margin: 0 0.75rem;
+}

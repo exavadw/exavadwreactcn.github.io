@@ -1,0 +1,89 @@
+#experiences{
+    /* Use global classes: .section */
+    overflow: hidden;
+    width: 100vw;
+    max-width: var(--max-width-content);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.experienceTitle{
+    /* Use global class: .title .title--with-padding */
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    padding-top: var(--spacing-2xl);
+    margin-bottom: var(--spacing-lg);
+}
+
+.experienceDesc {
+    /* Use global class: .description */
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-md);
+    max-width: 50rem;
+    padding: 0 var(--spacing-xl);
+}
+
+.experienceBars {
+    margin: var(--spacing-lg);
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+
+.experienceBar{
+    /* Use global class: .card */
+    display: flex;
+    margin: var(--spacing-md);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    border-radius: var(--radius-md);
+    background: var(--secondary-bg);
+}
+
+/* Subsection specific styles */
+.experienceBar.subsection {
+    /* Use global class: .card--subsection */
+    margin-left: var(--spacing-2xl);
+    background: rgba(108, 85, 149, 0.7);
+    border-left: 3px solid var(--border-subtle);
+    padding: 1.2rem 1.8rem;
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.experienceBarImg{
+    /* Use global class: .card__image */
+    object-fit: cover;
+    height: 4rem;
+    width: 4rem;
+    margin-right: var(--spacing-xl);
+}
+
+.experienceBarText{
+    /* Use global class: .card__text */
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-light);
+}
+
+/* Responsive styles */
+@media screen and (max-width:720px) {
+    .experienceBarText>p{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .experienceBarText>p{
+        font-size: 3vw;
+    }
+    .experienceBarImg {
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+    .experienceBarText>h2{
+        font-size: 5vw;
+    }
+}
